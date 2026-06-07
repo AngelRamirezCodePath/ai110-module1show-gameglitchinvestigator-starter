@@ -33,10 +33,10 @@ It wrote the code, ran away, and now the game is unplayable.
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
+1. User enters a number within the given range.
+2. If the answer is wrong, they get a hint on whether to go higher or lower.
+3. If they figure out the hidden number, they get a happy message.
+4. If the user fails to guess the hidden number within the total number of attempts allowed, they get a failure message.
 5. <!-- Add more steps as needed -->
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
@@ -44,9 +44,16 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 ## 🧪 Test Results
 
 ```
-# Paste your pytest output here, e.g.:
-# pytest tests/
-# ========================= X passed in 0.XXs =========================
+(.venv) (base) angel@Angels-MacBook-Air-94 ai110-module1show-gameglitchinvestigator-starter % pytest
+====================================================================================== test session starts =======================================================================================
+platform darwin -- Python 3.12.0, pytest-9.0.3, pluggy-1.6.0
+rootdir: /Users/angel/Documents/TF Folder/ai110-module1show-gameglitchinvestigator-starter
+plugins: anyio-4.13.0
+collected 7 items                                                                                                                                                                                
+
+tests/test_game_logic.py .......                                                                                                                                                           [100%]
+
+======================================================================================= 7 passed in 0.01s ========================================================================================
 ```
 
 ## 🚀 Stretch Features
