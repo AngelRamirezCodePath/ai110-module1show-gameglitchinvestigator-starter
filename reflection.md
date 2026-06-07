@@ -5,8 +5,12 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 1. What was broken when you started?
 
 - What did the game look like the first time you ran it?
+  The game looked clean, with no immediately visible bugs. The UI was very straight forward. If you guessed the correct number, then you knew once you hit it.
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
+  The hints were displaying the opposite of what they were supposed to. i.e. Expected 'higher' and got 'lower'
+  The total attempts number was not accurate. It displayed that I have no more attempts when I still had 1 attempt left.
+  The new game button does not work. It does nothing instead of clearing history and only resets attempts, but does not actually start a new game.
 
 **Bug Reproduction Log**
 
@@ -14,9 +18,9 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+| 50 | 'higher' hint | 'lower' hint | Nothing added to the history tracker |
+| 90 | 'lower' hint | 'higher' hint | Previous input added to history, but not current input |
+| 64 | 'correct guess' | 'correct guess' | previous added to history, not current. |
 
 ---
 
